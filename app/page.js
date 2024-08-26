@@ -1,10 +1,22 @@
+
+"use client"
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import styled from "styled-components";
+
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Title>hej</Title>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
