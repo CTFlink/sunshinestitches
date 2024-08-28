@@ -1,0 +1,1 @@
+export default function Test({parm1}){return (<div>{parm1}</div>)}

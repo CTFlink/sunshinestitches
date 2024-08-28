@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styled from "styled-components";
-import prisma from './lib/prisma';
-
-
+import prisma from '../lib/prisma';
+import SignIn from "@/components/signinButton";
+import Test from "@/components/test";
 
 export default async function Home() {
   const feeds = await prisma.post.findMany({
@@ -22,6 +22,7 @@ export default async function Home() {
       <div>
         hej
       </div>
+      <SignIn label="Sign in with Github" provider="Github"></SignIn>
       <div>{feeds && feeds.map(feed =>
                         <ul key={feed.id}>
                             <li>Title: {feed.title} </li>
