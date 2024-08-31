@@ -1,4 +1,4 @@
-import { signIn } from "@/auth"
+import { signIn } from "@/app/api/auth/[...nextauth]/auth"
  
 export default function SignIn({label, provider}) {
   return (
