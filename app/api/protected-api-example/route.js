@@ -1,11 +1,14 @@
 //Protected API 
+// dette API er wrapped af en higher order auth function der checker for om der er en session
+
 
 import { auth } from "auth"
 
-export const GET = auth((req) => {
+export const GET = auth( 
+  
+  (req) => {
   if (req.auth) {
     return Response.json({ data: "Protected data" })
   }
-
   return Response.json({ message: "Not authenticated" }, { status: 401 })
 }) 
