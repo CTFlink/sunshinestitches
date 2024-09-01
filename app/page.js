@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import prisma from '../lib/prisma';
+import { Prisma } from "@prisma/client";
 import SignIn from "@/components/signinButton";
 import UserAvatar from "@/components/userAvatar";
 import { SignOut } from "@/components/signOutButton";

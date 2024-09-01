@@ -1,3 +1,5 @@
+//Protected API 
+
 import { auth } from "auth"
 
 export const GET = auth((req) => {
