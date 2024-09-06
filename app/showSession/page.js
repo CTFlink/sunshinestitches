@@ -1,6 +1,6 @@
 // test page to show current session 
 
-import { auth } from "@/auth"
+import { auth } from "../api/auth/[...nextauth]/auth" 
  
 export default async function Page() {
   const session = await auth()

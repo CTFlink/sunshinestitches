@@ -1,4 +1,4 @@
-import { handlers } from "./auth" // Referring to the auth.js in root folder
+import { handlers } from "./auth" // Referring to the auth.js config file
 
 export const { GET, POST } = handlers
 // export const runtime = "edge" // optional 

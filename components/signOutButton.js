@@ -1,4 +1,4 @@
-import { signOut } from "@/app/api/auth/[...nextauth]/auth"
+import { signOut } from "../app/api/auth/[...nextauth]/auth"
  
 export function SignOut() {
   return (

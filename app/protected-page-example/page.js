@@ -1,4 +1,4 @@
-//protected page
+// protected page via layout.js
 
 import Link from "next/link";
 
